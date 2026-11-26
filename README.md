@@ -31,3 +31,5 @@ IntelliJ에서는 프로젝트 SDK와 Gradle JVM을 25로 설정하고 `Inventor
 | 로컬 비밀번호 | `inventory_local` |
 
 `docker compose down`으로 종료해도 데이터는 볼륨에 남습니다.
+
+처음 DB를 만들면 `warehouses` 테이블에 창고 5곳과 지점 80곳이 들어갑니다. 기존 로컬 DB는 앱을 실행하면 누락된 마스터가 추가됩니다.

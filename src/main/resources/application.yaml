@@ -5,6 +5,10 @@ spring:
     url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:${POSTGRES_PORT:15433}/inventory_db}
     username: ${SPRING_DATASOURCE_USERNAME:inventory_app}
     password: ${SPRING_DATASOURCE_PASSWORD:inventory_local}
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:master.sql
   jpa:
     open-in-view: false
     hibernate:
